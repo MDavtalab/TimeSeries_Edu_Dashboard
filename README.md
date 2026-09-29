@@ -88,7 +88,9 @@ The project uses Python-based data science tools:
 
 Additional libraries may be added as the project grows.
 
- pip install -r requirements.txt
+```markdown
+```bash
+pip install -r requirements.txt
 
 ---
 
