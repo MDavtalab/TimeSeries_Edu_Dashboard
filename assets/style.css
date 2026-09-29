@@ -1,0 +1,283 @@
+/*=========================================================
+    Time Series Learning Lab (TSLL)
+    Version : 0.1
+=========================================================*/
+
+/*---------------------------------------------------------
+    Google Font
+---------------------------------------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+
+/*---------------------------------------------------------
+    Global
+---------------------------------------------------------*/
+
+body{
+
+    background-color:#F4F7FA;
+
+    font-family: 'Inter', sans-serif;
+
+    margin:0;
+
+    padding:0;
+
+    color:#2C3E50;
+
+}
+
+
+/*---------------------------------------------------------
+    Navbar
+---------------------------------------------------------*/
+
+.navbar{
+
+    box-shadow:0px 3px 12px rgba(0,0,0,.10);
+
+}
+
+
+/*---------------------------------------------------------
+    Sidebar
+---------------------------------------------------------*/
+
+.sidebar-card{
+
+    border-radius:15px;
+
+    border:none;
+
+    box-shadow:0px 2px 10px rgba(0,0,0,.08);
+
+}
+
+
+/*---------------------------------------------------------
+    Cards
+---------------------------------------------------------*/
+
+.ts-card{
+
+    background:white;
+
+    border-radius:15px;
+
+    border:none;
+
+    padding:20px;
+
+    box-shadow:0px 3px 10px rgba(0,0,0,.08);
+
+    margin-bottom:20px;
+
+}
+
+
+/*---------------------------------------------------------
+    Titles
+---------------------------------------------------------*/
+
+.page-title{
+
+    font-size:30px;
+
+    font-weight:700;
+
+    color:#1B4F72;
+
+}
+
+
+.section-title{
+
+    font-size:22px;
+
+    font-weight:600;
+
+    color:#21618C;
+
+    margin-bottom:15px;
+
+}
+
+
+/*---------------------------------------------------------
+    Text
+---------------------------------------------------------*/
+
+.explanation{
+
+    font-size:16px;
+
+    line-height:1.7;
+
+    color:#555;
+
+}
+
+
+.formula{
+
+    background:#EEF5FF;
+
+    border-left:5px solid #3498DB;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+}
+
+
+/*---------------------------------------------------------
+    Tables
+---------------------------------------------------------*/
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+}
+
+th{
+
+    background:#2E86DE;
+
+    color:white;
+
+    padding:10px;
+
+}
+
+td{
+
+    padding:10px;
+
+    border-bottom:1px solid #EEEEEE;
+
+    text-align:center;
+
+}
+
+
+/*---------------------------------------------------------
+    Active Rolling Window
+---------------------------------------------------------*/
+
+.window-cell{
+
+    background:#D6EAF8;
+
+    font-weight:bold;
+
+}
+
+
+.ma-cell{
+
+    background:#D5F5E3;
+
+    font-weight:bold;
+
+}
+
+
+/*---------------------------------------------------------
+    Buttons
+---------------------------------------------------------*/
+
+.btn-primary{
+
+    border-radius:10px;
+
+}
+
+
+.btn-success{
+
+    border-radius:10px;
+
+}
+
+
+.btn-danger{
+
+    border-radius:10px;
+
+}
+
+
+/*---------------------------------------------------------
+    Slider
+---------------------------------------------------------*/
+
+.rc-slider-track{
+
+    background:#3498DB;
+
+}
+
+.rc-slider-handle{
+
+    border:3px solid #3498DB;
+
+}
+
+
+/*---------------------------------------------------------
+    Code Block
+---------------------------------------------------------*/
+
+.code-block{
+
+    background:#272822;
+
+    color:#F8F8F2;
+
+    border-radius:10px;
+
+    padding:15px;
+
+    font-family:Consolas;
+
+    overflow-x:auto;
+
+}
+
+
+/*---------------------------------------------------------
+    Plot
+---------------------------------------------------------*/
+
+.js-plotly-plot{
+
+    border-radius:15px;
+
+}
+
+
+/*---------------------------------------------------------
+    Footer
+---------------------------------------------------------*/
+
+.footer{
+
+    text-align:center;
+
+    color:#888;
+
+    padding:20px;
+
+    margin-top:40px;
+
+    font-size:14px;
+
+}
