@@ -4,6 +4,10 @@ An interactive educational dashboard for exploring and understanding **Time Seri
 
 This project is designed as a practical learning laboratory where theoretical concepts from time series forecasting are transformed into interactive visual experiences. The goal is to make time series topics easier to understand through dynamic charts, explanations, mathematical formulas, and hands-on examples.
 
+## Dashboard
+
+![Time Series Dashboard](Image/dashboard.png)
+
 ---
 
 ## 🚀 Project Overview
@@ -51,6 +55,10 @@ The dashboard will gradually include different modules from the Time Series cour
 - Time series features (time dependence vs. serial dependence)
 - Hybrid models
 - Forecasting with Machine learning approaches
+
+## Moving Average Explorer
+
+![Moving Average Explorer](Image/moving_average.png)
   
 ---
 
