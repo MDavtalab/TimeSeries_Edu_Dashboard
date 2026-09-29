@@ -44,42 +44,14 @@ The main objectives of this project are:
 
 The dashboard will gradually include different modules from the Time Series course:
 
-### 1. Introduction to Time Series
-- What is time series data?
-- Time index and temporal structure
-- Difference between time series and regular tabular data
-
-### 2. Trend Analysis
-- Identifying long-term movement
-- Linear trend modeling
-- Trend decomposition
-
-### 3. Seasonality
-- Understanding seasonal patterns
-- Seasonal decomposition
-- Fourier features
-- Calendar-based seasonality
-
-### 4. Time Series Components
-
-Exploration of:
-
-- Trend
-- Seasonality
-- Cycles
-- Noise / Residuals
-
-### 5. Forecasting Methods
-
-Future modules will include:
-
-- Baseline forecasting
 - Moving averages
-- Linear regression forecasting
-- Feature engineering for time series
-- Machine learning approaches
-- Advanced forecasting methods
-
+- Lag Features
+- Trend
+- Seasonality (Fourier features)
+- Time series features (time dependence vs. serial dependence)
+- Hybrid models
+- Forecasting with Machine learning approaches
+  
 ---
 
 ## 🖥️ Dashboard Features
@@ -94,14 +66,6 @@ The application is designed with interactive components:
 - Residual analysis
 - Forecast comparison charts
 
-### Educational Components
-
-- Concept explanations
-- Mathematical formulas
-- Practical examples
-- Interactive controls
-- Data exploration tools
-
 ## 🛠️ Technologies
 
 The project uses Python-based data science tools:
@@ -115,61 +79,6 @@ The project uses Python-based data science tools:
 - Scikit-learn
 
 Additional libraries may be added as the project grows.
-
----
-
-## 📊 Example Applications
-
-Although this project is educational, the concepts demonstrated here are directly applicable to real-world problems such as:
-
-- Retail sales forecasting
-- Promotion impact analysis
-- Demand prediction
-- Inventory planning
-- Business intelligence dashboards
-
----
-
-## 🔄 Project Status
-
-🚧 **Work in Progress**
-
-This repository is actively being developed.
-
-The current version focuses on building the foundation of the interactive learning dashboard, including:
-
-- Project architecture
-- Visualization components
-- Time series concept modules
-- Interactive educational pages
-
-More modules, examples, datasets, and forecasting techniques will be added progressively.
-
-The final goal is to create a complete **Time Series Learning Platform** that combines:
-
-- Data science theory
-- Mathematical intuition
-- Interactive visualization
-- Practical forecasting examples
-
----
-
-## 🗺️ Future Roadmap
-
-Planned improvements:
-
-- [ ] Complete all Kaggle Time Series Course modules
-- [ ] Add interactive forecasting examples
-- [ ] Add real-world datasets
-- [ ] Implement machine learning forecasting models
-- [ ] Add model evaluation metrics
-- [ ] Include advanced methods such as:
-  - ARIMA
-  - Exponential Smoothing
-  - Gradient Boosting models
-  - Neural network forecasting
-- [ ] Improve UI/UX design
-- [ ] Add deployment instructions
 
 ---
 
