@@ -91,6 +91,7 @@ Additional libraries may be added as the project grows.
 ```markdown
 ```bash
 pip install -r requirements.txt
+```
 
 ---
 
