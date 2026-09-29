@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Moving Average Explorer</title>
+<style>
+body{font-family:Arial,sans-serif;max-width:900px;margin:20px auto}
+table{border-collapse:collapse;margin-top:10px}
+td,th{border:1px solid #ccc;padding:6px 10px;text-align:center}
+.win{background:#cfe8ff}
+.ma{background:#c8f7c5;font-weight:bold}
+.controls{display:flex;gap:20px;align-items:center;flex-wrap:wrap}
+</style>
+</head>
+<body>
+<h2>Interactive Moving Average Explorer</h2>
+<div class="controls">
+<label>Window <input id="w" type="range" min="2" max="6" value="3"><span id="wv">3</span></label>
+<label><input id="center" type="checkbox"> center=True</label>
+<label>Step <input id="step" type="range" min="0" max="9" value="0"><span id="sv">0</span></label>
+</div>
+<p>Sales: Jan-Dec = 100,110,...,210</p>
+<div id="tbl"></div>
+<script>
+const months=["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+const sales=[100,110,120,130,140,150,160,170,180,190,200,210];
+function render(){
+ let w=+document.getElementById("w").value;
+ document.getElementById("wv").textContent=w;
+ let center=document.getElementById("center").checked;
+ let step=document.getElementById("step");
+ step.max=12-w;
+ let s=Math.min(+step.value,12-w); step.value=s;
+ document.getElementById("sv").textContent=s;
+ let start=s,end=s+w-1;
+ let ma=sales.slice(start,end+1).reduce((a,b)=>a+b,0)/w;
+ let place=center?Math.floor((start+end)/2):end;
+ let h="<table><tr><th>Month</th>";
+ months.forEach((m,i)=>h+=`<th class="${i>=start&&i<=end?"win":""}">${m}</th>`);
+ h+="</tr><tr><th>Sales</th>";
+ sales.forEach((v,i)=>h+=`<td class="${i>=start&&i<=end?"win":""}">${v}</td>`);
+ h+="</tr><tr><th>MA</th>";
+ months.forEach((_,i)=>{
+   if(i===place) h+=`<td class="ma">${ma.toFixed(1)}</td>`;
+   else h+="<td>-</td>";
+ });
+ h+=`</tr></table>
+ <p><b>Window:</b> ${months[start]} → ${months[end]}<br>
+ <b>Average:</b> (${sales.slice(start,end+1).join(" + ")}) / ${w} = ${ma.toFixed(1)}<br>
+ <b>Placed at:</b> ${months[place]} (${center?"center=True":"center=False"})</p>`;
+ document.getElementById("tbl").innerHTML=h;
+}
+document.querySelectorAll("input").forEach(x=>x.oninput=render);
+render();
+</script>
+</body></html>
