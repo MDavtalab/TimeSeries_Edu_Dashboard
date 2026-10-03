@@ -69,13 +69,13 @@ PAGES = [
         "enabled": True,
     },
     {
-        "icon": "⌛",
+        "icon": "🖇",
         "title": "Hybrid Models",
         "path": "/hybrid-models",
         "enabled": True,
     },
     {
-        "icon": "⌛",
+        "icon": "⚙️",
         "title": "Forecasting With Machine Learning",
         "path": "/forecasting-with-machine-learning",
         "enabled": True,
